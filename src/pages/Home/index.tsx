@@ -10,11 +10,28 @@ import {
   StartCountdownButton,
   TaskInput,
 } from './styles'
+import { zodResolver } from '@hookform/resolvers/zod'
+import * as zod from 'zod'
+
+interface FormProps {
+  task: string
+  minutesAmount: number
+}
+
+const newCycleFormValidationSchema = zod.object({
+  task: zod.string().min(1, 'Informe o título da tarefa'),
+  minutesAmount: zod
+    .number()
+    .min(5, 'O ciclo precisa ser no mínimo de 5 minutos.')
+    .max(60, 'O ciclo precisa ser no máximo de 60 minutos.'),
+})
 
 export function Home() {
-  const { register, handleSubmit, watch } = useForm()
+  const { register, handleSubmit, watch } = useForm({
+    resolver: zodResolver(newCycleFormValidationSchema),
+  })
 
-  function handleCreateNewCycle(data) { }
+  function handleCreateNewCycle(data: FormProps) { }
 
   const isSubmitDisabled = !watch('task')
 
@@ -38,8 +55,6 @@ export function Home() {
             id="minutesAmount"
             placeholder="00"
             step="5"
-            min={5}
-            max={60}
             {...register('minutesAmount', { valueAsNumber: true })}
           />
           <span>minutos.</span>
