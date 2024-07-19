@@ -113,3 +113,12 @@ export const StartCountdownButton = styled.button`
     cursor: not-allowed;
   }
 `
+
+export const StopCountdownButton = styled(StartCountdownButton)`
+  background: ${(props) => props.theme['red-500']};
+  transition: 0.2s;
+
+  &:hover:not(:disabled) {
+    background: ${(props) => props.theme['red-700']};
+  }
+`
