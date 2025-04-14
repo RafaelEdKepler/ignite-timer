@@ -1,19 +1,47 @@
-# IGNITE TIMER
+<h1 align="center">⏱️ Ignite Timer</h1> <p align="center"> A project built to deepen my understanding of React fundamentals while developing a practical and stylish Pomodoro-style timer. </p> <p align="center"> <img src="https://img.shields.io/badge/React-18.2.0-61DAFB?logo=react&style=for-the-badge" /> <img src="https://img.shields.io/badge/Styled--Components-%23db7093?style=for-the-badge&logo=styled-components" /> <img src="https://img.shields.io/badge/React--Router--DOM-6.21.0-CA4245?style=for-the-badge&logo=reactrouter" /> </p>
 
-Projeto desenvolvido para aprimorar conhecimentos básicos utilizando React.JS.
+🚀 About the Project
 
-Para instalar a aplicação basta rodar:
+Ignite Timer is a React-based timer application developed as part of my learning journey.
+It was designed to help me solidify core concepts like state management, component communication, and best practices in React development.
 
-`npm i` e `npm run dev`
+🔧 Getting Started
+To run the application locally:
 
-Aplicação utilizada para aperfeiçoar conhecimentos como:
+# Install dependencies
 
-- Hooks (useEffect, useState, useReducer, useContext)
-- Router (React router dom)
-- Imutabilidade (Immer)
-- CSS (Styled-components)
-- Mantimento dos dados (localStorage)
+``npm install``
 
-## EVOLUINDO A APLICAÇÃO
+# Start the development server
 
-Como maneira de evoluir a aplicação, pretendo futuramente implementar um sistema de login, junto com um banco de dados capaz de manter um histórico de timers, bem como uma sugestão mais assertiva de nomes e tempos de timers utilizando os timers anteriores como base.
+``npm run dev``
+
+🧠 What I Practiced
+
+This project helped me improve my skills in several key areas of React development:
+
+# Feature	Description #
+
+🪝 Hooks	useEffect, useState, useReducer, useContext
+
+🌐 Routing	Page navigation using react-router-dom
+
+♻️ Immutability	Handled using immer
+
+🎨 Styling	CSS-in-JS with styled-components
+
+💾 Persistence	Saved data using localStorage
+
+# Future Improvements #
+
+As the next step in this project, I plan to:
+
+🔐 Implement a login system.
+
+🧠 Connect to a database to store timer history.
+
+🎯 Suggest timer names and durations based on past entries.
+
+💬 Final Thoughts
+This project is part of my ongoing React learning path.
+I’m excited to keep evolving it and turning it into a fully featured productivity tool!
